@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 This project focuses on performing a comprehensive **Cohort Analysis** to evaluate user retention patterns over time. The analysis is built on a raw dataset with highly inconsistent datetime formats, requiring advanced text parsing and conditioning at the database level before visualization. 
 
-The final dashboard is designed in a modern **Dark Mode Theme** to deliver clean, professional, and easily scannable business insights.
+The final dashboard is designed to deliver clean, professional, and easily scannable business insights.
 
 ## 🛠️ Technical Stack & Skills
 * **SQL (PostgreSQL):** Common Table Expressions (CTEs), advanced text parsing, dynamic conditional logic (`CASE WHEN`), type casting, and cohort offset calculations.
@@ -21,8 +21,8 @@ The core strength of the data preparation phase lies in standardizing inconsiste
 * Calculated precise dynamic `month_offset` using: 
   `extract(year from age(...)) * 12 + extract(month from age(...))`
 
-## 📊 Tableau Visualization (Dark Mode)
-The aggregated data is visualized using a custom-tailored Dark Mode dashboard, featuring:
+## 📊 Tableau Visualization
+The aggregated data is visualized using a custom-tailored dashboard, featuring:
 * **Cohort Retention Heatmap:** Tracking user activity month-by-month.
 * **Segment Breakdown:** Quick toggle via `promo_signup_flag` to compare behavior between organic users and promo-acquired campaigns.
 
