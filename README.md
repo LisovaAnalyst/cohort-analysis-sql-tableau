@@ -1,15 +1,30 @@
-# Cohort Analysis & Retention Rate Project (SQL + Tableau)
+# Cohort Analysis & User Retention Project (SQL + Tableau)
 
-## Project Overview
-This project focuses on performing a comprehensive **Cohort Analysis** to evaluate user retention patterns. The analysis is built on a dataset with "raw" and challenging datetime formats, requiring advanced text parsing and cleaning at the database level before visualization.
+## 📌 Project Overview
+This project focuses on performing a comprehensive **Cohort Analysis** to evaluate user retention patterns over time. The analysis is built on a raw dataset with highly inconsistent datetime formats, requiring advanced text parsing and conditioning at the database level before visualization. 
 
-## Technical Stack
-* **SQL (PostgreSQL):** Advanced text parsing, CTEs (`WITH` clauses), date transformation, and calculating cohort offsets.
-* **Tableau:** Interactive Dashboard showcasing Cohort Heatmaps and Promo vs. Non-Promo behavior.
+The final dashboard is designed in a modern **Dark Mode Theme** to deliver clean, professional, and easily scannable business insights.
 
-## SQL Highlights: Handling "Dirty" Data
-The core strength of the data preparation lies in standardizing inconsistent date string formats (handling variations with dots, slashes, and truncated years) before performing analytical calculations:
-* Used `split_part` and `replace` to isolate day, month, and year components.
-* Implemented `make_date` dynamically based on year length (handling 2-digit vs 4-digit years).
-* Calculated precise dynamic `month_offset` using `extract(year from age(...)) * 12 + extract(month from age(...))`.
+## 🛠️ Technical Stack & Skills
+* **SQL (PostgreSQL):** Common Table Expressions (CTEs), advanced text parsing, dynamic conditional logic (`CASE WHEN`), type casting, and cohort offset calculations.
+* **Tableau:** Data visualization, interactive filtering, and dynamic Cohort Heatmaps.
+* **Data Cleansing:** Standardizing unstructured date formats.
 
+## 🗂️ Project Structure
+* `project_sql_lisova.sql` — Production-ready SQL script with data cleaning and aggregation logic.
+* `README.md` — Project documentation and business summary.
+
+## 🚀 SQL Highlights: Handling "Dirty" Data
+The core strength of the data preparation phase lies in standardizing inconsistent date string formats (handling variations with dots, slashes, and truncated 2-digit years) before executing any analytical functions:
+* Used `split_part`, `replace`, and `trim` to cleanly isolate day, month, and year components.
+* Implemented dynamic `make_date` inside conditional statements to safely handle both 2-digit (`YY + 2000`) and 4-digit (`YYYY`) years.
+* Calculated precise dynamic `month_offset` using: 
+  `extract(year from age(...)) * 12 + extract(month from age(...))`
+
+## 📊 Tableau Visualization (Dark Mode)
+The aggregated data is visualized using a custom-tailored Dark Mode dashboard, featuring:
+* **Cohort Retention Heatmap:** Tracking user activity month-by-month.
+* **Segment Breakdown:** Quick toggle via `promo_signup_flag` to compare behavior between organic users and promo-acquired campaigns.
+
+## 💡 Key Business Insights & Proposals
+*(To be filled dynamically after we complete the dashboard and look at the exact numbers! We will define actionable proposals here regarding how user acquisition strategy should be optimized based on the retention curves).*
