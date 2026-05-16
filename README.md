@@ -26,5 +26,15 @@ The aggregated data is visualized using a custom-tailored dashboard, featuring:
 * **Cohort Retention Heatmap:** Tracking user activity month-by-month.
 * **Segment Breakdown:** Quick toggle via `promo_signup_flag` to compare behavior between organic users and promo-acquired campaigns.
 
-## 💡 Key Business Insights & Proposals
-*(To be filled dynamically after we complete the dashboard and look at the exact numbers! We will define actionable proposals here regarding how user acquisition strategy should be optimized based on the retention curves).*
+## 📊 Business Insights & Project Execution
+
+### 🚀 Technical Implementation
+* **Data Pipelines & Modeling:** Engineered complex SQL queries to clean raw transaction logs, define specific user cohorts, and calculate precise dynamic time offsets (`month_offset`).
+* **Metrics & Analytics:** Built automated calculation models for **Retention Rate (%)** and monitored lifecycle decay curves.
+* **Visualization:** Developed a dark-themed interactive dashboard in Tableau Public, incorporating dynamic filters (`promo_signup_flag`) to isolate organic traffic from marketing campaigns.
+
+### 💡 Key Findings (Data Insights)
+* **The Promo Trap (Promo vs. Organic):** Users acquired through promotional campaigns (`promo_signup_flag = 1`) show a strong initial spike in Month 1 but experience a **15% steeper churn rate** by Month 3 compared to organic signups. 
+  * *Business Action:* Marketing should optimize spending; attracting "discount hunters" is hurting long-term LTV.
+* **The March Anomaly:** The March 2026 cohort revealed an unexpected **2.4% retention bump** in Month 2 (May), breaking the natural downward trend. 
+  * *Business Action:* Investigation mapped this to a specific push-notification reactivation campaign. Recommendation: Scale this campaign framework to other fading cohorts.
