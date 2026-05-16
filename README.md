@@ -38,3 +38,6 @@ The aggregated data is visualized using a custom-tailored dashboard, featuring:
   * *Business Action:* Marketing should optimize spending; attracting "discount hunters" is hurting long-term LTV.
 * **The March Anomaly:** The March 2026 cohort revealed an unexpected **2.4% retention bump** in Month 2 (May), breaking the natural downward trend. 
   * *Business Action:* Investigation mapped this to a specific push-notification reactivation campaign. Recommendation: Scale this campaign framework to other fading cohorts.
+  * ### 📊 Interactive Dashboard
+You can explore the live interactive dashboard here: 
+👉 [Live Interactive Tableau Dashboard](https://public.tableau.com/authoring/CustomerRetentionCohortAnalytics/CustomerRetentionCohortAnalytics#1)
