@@ -40,4 +40,4 @@ The aggregated data is visualized using a custom-tailored dashboard, featuring:
   * *Business Action:* Investigation mapped this to a specific push-notification reactivation campaign. Recommendation: Scale this campaign framework to other fading cohorts.
   * ### 📊 Interactive Dashboard
 You can explore the live interactive dashboard here: 
-👉 [Live Interactive Tableau Dashboard](https://public.tableau.com/authoring/CustomerRetentionCohortAnalytics/CustomerRetentionCohortAnalytics#1)
+👉 [Live Interactive Tableau Dashboard]https://public.tableau.com/app/profile/olena.lisova/viz/OnlineRetailCohortAnalysisDashboard/Dashboard1
